@@ -1,0 +1,29 @@
+   h1{
+    font-size: 35px;
+ }
+
+  label {
+    display:block;
+    font: normal 15px/1.25 Arial;
+  }
+  
+  input {
+    box-sizing: border-box;
+    width: 240px;
+    height: 48px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px lightgrey;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  #button {
+    transition-duration: 0.4s;
+  }
+  
+  #button:hover {
+    background-color:powderblue;
+    color: white;
+
+  }
