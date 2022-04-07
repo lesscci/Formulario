@@ -1,4 +1,95 @@
-   h1{
+*{
+  font-family: 'sen', sans-serif;
+  font-weight: 100;
+}
+
+body{
+  background-color: black;
+}
+.flex-container {
+  display: flex;
+  /*CENTRADO VERTICALMENTE*/
+  align-items: center;
+  /*CUANDO LO HACEMOS RESPONSIBLE 
+  SE PUEDA DESLIZAR*/
+  flex-wrap:wrap;
+  justify-content: center;
+  background-color: #333;
+  margin: 50px 30px;
+  padding:20px ;
+}
+
+.form{
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+.form__input{
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0 ;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: #fff;
+}
+
+/*FOCUS--> CUANDO EL ELEMENTO ESTE 
+SELECCIONADO*/
+.form__input::focus{
+  background: linear-gradient(to bottom, transparent,#222);
+  outline: none;
+  border-bottom: 3px;
+}
+
+.form textarea{
+  min-height: 140%;
+  /*PARA QUE NO SE PUEDA AGRANDAR A LA HORA DE ESCRIBIR*/
+  resize: none;
+}
+
+.form-img {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  
+}
+
+.form-img div {
+  padding: 10px;
+}
+
+ .img-container{
+   margin: auto;
+ }
+
+.img-container div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  text-align: center;
+  padding: 40px;
+}
+
+.form-img img{
+  width: 80px;
+  margin: auto;
+}
+
+.form input [type="submit"]{
+  background-color: red;
+  border-bottom: none;
+  padding: 12px;
+}
+
+.form input [type="submit"]:hover{
+  background-color: rgb(44, 42, 42);
+  border-bottom: none;
+  padding: 12px;
+}
+
+/*   h1{
     font-size: 35px;
  }
 
@@ -27,3 +118,4 @@
     color: white;
 
   }
+*/
